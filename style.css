@@ -8,9 +8,16 @@ nav{
     float: left;
     border:1px;
 }
-.container{
-    width: 100%;
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap:20px;
+   
 }
+
+    
+
 @media screen and (max-width:300px){
     body{
         background-color: red;
@@ -19,9 +26,7 @@ nav{
         font-size: small;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    .container{
-        box-sizing: border-box;
-    }
+    
 }
 @media screen and (min-width:300px) and (max-width:768px){
     body{
@@ -31,21 +36,11 @@ nav{
         font-size: medium;
         font-family: 'Times New Roman', Times, serif;
     }
-    .small{
-        width:60%;
-        float: left;
-        
+    .grid-container{
+        grid-template-columns: 2fr 1fr 3fr ;
     }
-    .medium{
-        float:left;
-        width:10%;
         
-    }
-    .large{
     
-        right:0px;
-        width:100%;
-    }
     
 
 }
@@ -56,7 +51,7 @@ nav{
     p{
         font-size: x-large;
     }
-    .container{
-        display: flex;
+    .grid-container{
+        display:inline-grid;
     }
 }
