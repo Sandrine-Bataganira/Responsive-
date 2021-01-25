@@ -2,7 +2,7 @@
  
  ***
  
- ##CSS Media Queries
+ ## CSS Media Queries
  
  Media query is a CSS technique introduced in CSS3.
 
@@ -10,7 +10,7 @@
  
  With Media Queries, we can tell the navigator : if the size of the screen is X, use these css properties, otherwise those. 
  
- ###The Challenge
+ ### The Challenge
  
  In this repo ,with a *HTML* and *CSS* files:
  
