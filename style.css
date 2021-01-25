@@ -1,0 +1,48 @@
+body{
+    background-color: aliceblue;
+}
+h3{
+    color: cornsilk;
+}
+nav{
+    float: left;
+    border:1px;
+}
+@media screen and (max-width:300px){
+    body{
+        background-color: red;
+    }
+    p{
+        font-size: small;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    article{
+        position: relative;
+        
+    }
+}
+@media screen and (min-width:300px) and (max-width:768px){
+    body{
+        background-color: green;
+    }
+    p{
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .small{
+        display: none;
+        
+    }
+    .large{
+        display:none;
+    }
+
+}
+@media screen and (min-width:768px){
+    body{
+        background-color: blue;
+    }
+    p{
+        font-size: x-large;
+    }
+}
