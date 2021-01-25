@@ -8,6 +8,9 @@ nav{
     float: left;
     border:1px;
 }
+.container{
+    width: 100%;
+}
 @media screen and (max-width:300px){
     body{
         background-color: red;
@@ -16,9 +19,8 @@ nav{
         font-size: small;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    article{
-        position: relative;
-        
+    .container{
+        box-sizing: border-box;
     }
 }
 @media screen and (min-width:300px) and (max-width:768px){
@@ -30,12 +32,21 @@ nav{
         font-family: 'Times New Roman', Times, serif;
     }
     .small{
-        display: none;
+        width:60%;
+        float: left;
+        
+    }
+    .medium{
+        float:left;
+        width:10%;
         
     }
     .large{
-        display:none;
+    
+        right:0px;
+        width:100%;
     }
+    
 
 }
 @media screen and (min-width:768px){
@@ -44,5 +55,8 @@ nav{
     }
     p{
         font-size: x-large;
+    }
+    .container{
+        display: flex;
     }
 }
