@@ -26,6 +26,10 @@ nav{
         font-size: small;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    .grid-container{
+        display: block;
+    }
+    }
     
 }
 @media screen and (min-width:300px) and (max-width:768px){
