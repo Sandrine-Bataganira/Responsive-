@@ -35,7 +35,7 @@ body
 
 #bloc_page
 {
-    width: 900px;
+    
     margin: auto;
 }
 
@@ -51,27 +51,26 @@ section h1, footer h1, nav a
 header
 {
     background: url('images/separateur.png') repeat-x bottom;
-    display: flex;
-    justify-content: space-between;
+    
+    
     align-items: flex-end;
 }
 
 #titre_principal
 {
-    display: flex;
-    flex-direction: column;
+    
+    
 }
 
 #logo
 {
-    display: flex;
-    flex-direction: row;
+    
     align-items: baseline;
 }
 
 #logo img
 {
-    width: 59px;
+   
     height: 60px;
 }
 
@@ -96,7 +95,7 @@ header h2
 nav ul
 {
     list-style-type: none;
-    display: flex;
+    
 }
 
 nav li
@@ -136,7 +135,7 @@ nav a:hover
     position: absolute;
     bottom: 0;
     border-radius: 0px 0px 5px 5px;
-    width: 99.5%;
+    width: 99%;
     height: 33px;
     padding-top: 15px;
     padding-left: 4px;
@@ -171,7 +170,7 @@ nav a:hover
 
 section
 {
-    display: block;
+   
     margin-bottom: 20px;
 }
 
@@ -183,7 +182,7 @@ article, aside
 article
 {
     margin-right: 20px;
-    flex: 1;
+    
 }
 
 .ico_categorie
@@ -199,7 +198,7 @@ article p
 
 aside
 {
-    flex: 1.2;
+    
     position: relative;
     background-color: #706b64;
     box-shadow: 0px 2px 5px #1c1a19;
@@ -235,7 +234,7 @@ aside img
 
 footer
 {
-    display: flex;
+   
     background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
     padding-top: 25px;
 }
@@ -253,17 +252,17 @@ footer h1
 
 #tweet
 {
-    width: 28%;
+    
 }
 
 #mes_photos
 {
-    width: 35%;
+   
 }
 
 #mes_amis
 {
-    width: 31%;
+  
 }
 
 #mes_photos img
@@ -274,7 +273,7 @@ footer h1
 
 #listes_amis
 {
-    display: flex;
+    
     justify-content: space-between;
     margin-top: 0;
 }
@@ -290,37 +289,39 @@ footer h1
     text-decoration: none;
     color: #760001;
 }
-
-
-@media screen and (max-width:330px){
-    body{
+@media screen and(min-width:400px){
+    section{
         display: grid;
-        grid-template-columns: 50px 50px;
-        
+        grid-template-columnS: 50px 50px;
+    }
+    footer{
+        display:grid;
+        grid-template-columns: 50px 50px 50px;
+    }
+}
 
+@media screen and (min-width:400px) and (max-width:800px){
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
     }
     nav ul{
         display: grid;
-        margin: 0%;
-    }
-    }
-    #bloc_page{
-        width:300px;
-        margin:0px;
-        
-    }
-    
-
-@media screen and (min-width:330px) and (max-width:780px){
-    section{
-        display: grid;
-        grid-template-columns: 300px 200px;
+        grid-template-columns: 120px 120px 120px 120px;
         
 
     }
-    #bloc_page{
-        width: min-content;
+    #titre_principal #logo{
+        margin-left: 220px;
     }
-    
+    header h2{
+        margin-left: 200px;
+    }
 }
+@media screen and (min-width:800px) and (max-width:1300px){
 
+}
